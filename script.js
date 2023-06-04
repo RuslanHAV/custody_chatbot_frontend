@@ -86,8 +86,9 @@ const botReply = async (prompt) => {
 
   loader(messageDiv);
 
+  
   // fetch data from server -> bot's response
-  const response = await fetch(process.env.REACT_APP_SERVER_URL, {
+  const response = await fetch(/* process.env.REACT_APP_SERVER_URL */'https://squid-app-96wr5.ondigitalocean.app/api', {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
